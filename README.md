@@ -16,6 +16,9 @@ It allows to import all customer data from Excel and follow the status of spare 
 #### Responsive: Bootstrap   
 
 
+## All data stored in this app are a dummy data which purpose is to represent real data structure.
+
+
 
 
 
