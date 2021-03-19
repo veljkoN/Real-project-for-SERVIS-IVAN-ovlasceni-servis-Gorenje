@@ -1,5 +1,5 @@
 # Click here → **[GServis-IVAN](https://g-service-4f3ae.web.app/prijava)** to see application hosted on web
-
+## All data stored in this app are a dummy data which purpose is to represent real data structure!
 ## About
 This is my first real project created for **[GSD - Gorenje servis & delovi-IVAN](https://www.gsd.rs/)** company. The application is used for inner tracking data through all faze (from calling customer to finish the job). The application has two parts - Creating an account for tracking spare parts through different parts of the company and Importing data for customer status.
 
@@ -16,10 +16,3 @@ It allows to import all customer data from Excel and follow the status of spare 
 #### Responsive: Bootstrap   
 
 
-## All data stored in this app are a dummy data which purpose is to represent real data structure.
-
-
-
-
-
-Real project for SERVIS IVAN ovlasceni servis Gorenje uredjaja i prodaja originalnih delova
