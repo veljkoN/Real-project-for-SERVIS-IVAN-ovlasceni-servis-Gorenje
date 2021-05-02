@@ -14,10 +14,12 @@ const NavBar = () => {
         <div className="collapse navbar-collapse justify-content-end " id="collapsibleNavbar">
           {logg() ? ( 
           <ul className='navbar-nav '>
+            <li className="nav-item"><Link className="nav-link" to='/depozit'><span id='depozitLink' className="rounded-circle">D</span></Link></li>
+            <li className="nav-item" ><Link className="nav-link"  to='/prijemnica'><span id='prijemincaLink' className="rounded-circle newP">P</span></Link></li>
             <li className="nav-item"><Link className="nav-link" to='/'>Unos naloga</Link></li>
             <li className="nav-item dropdown" >
               <Link to='/#'  className="dropdown-toggle nav-link" id="navbardrop" data-toggle="dropdown">
-                Tabele
+                Tabele - serviseri
               </Link>
               <div className="dropdown-menu" >
                 <Link  to='/pretraga'  className="nav-link">Promena podataka</Link>
@@ -43,9 +45,9 @@ const NavBar = () => {
               </Link>    
               <div className="dropdown-menu" >
                 <Link  to='/promeneUvezenihPodataka' className='nav-link li-text'>Promena podataka</Link>
-                <Link  to='/ucitajPodatke' className='nav-link li-text'>Učitaj tabelu</Link>
-                <Link  to='/sviUvezeniPodaci'  className="nav-link">Svi uvezeni podaci</Link>
+                <Link  to='/sviUvezeniPodaci'  className="nav-link">Tabela - stranke</Link>
                 <Link  to='/proveraDelova'  className="nav-link">Provera delova</Link>
+                <Link  to='/ucitajPodatke' className='nav-link li-text'>Učitaj tabelu</Link>
                 <Link  to='/obrisiUvezenePodatke'  className="nav-link">Obriši podatke</Link>
                 <div className="dropdown-divider"></div>
                 <Link  to='/promenaPodatakaBulevar'  className="nav-link">Magacin Bulevar - promena</Link>
@@ -62,6 +64,7 @@ const NavBar = () => {
                 <Link  to='/korekcijaCena' className='nav-link li-text'>Izmeni cene</Link>
               </div> 
             </li>
+            
             <li className="nav-item dropdown">
               <Link to={'/#'} className="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                 Podešavanja <img src={SettingsImage} id='img-set' alt='settings-img'/>
@@ -69,6 +72,7 @@ const NavBar = () => {
               <div className="dropdown-menu">
               <Link to='/noviServiser' className="nav-link">Novi serviser</Link>
               <Link to='/obrisiServisera' className="nav-link">Obriši servisera</Link> 
+              <Link to='/noviRadnik' className="nav-link">Depozit/Prijemnica</Link>
                 <div className="dropdown-divider"></div>
                 <Link to={'/#'} id='logoutImg'  className='nav-link login' onClick={(e)=>{
                     e.preventDefault()

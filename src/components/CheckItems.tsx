@@ -71,7 +71,7 @@ const AllUploadingData:React.FC = () => {
                 (<div className='table-responsive mt-2'>
                     <div className="clearfix">
                         <span className="float-left">
-                            <h4>Svi podaci koji se trenutno nalaze u bazi</h4> 
+                            <h4>Svi podaci sa statusom <mark className='text-warning'>poručeno</mark> koji se trenutno nalaze u bazi</h4> 
                         </span>
                         <span className="float-right">
                             {data.length>0 &&  <h5>Ukupan broj naloga {} <span className="badge badge-danger">{data.length}</span></h5>} 
@@ -79,7 +79,7 @@ const AllUploadingData:React.FC = () => {
                     </div>
                     <table className='table table-bordered table-hover tableFixHead mt-1' id='table-to-excel'>
                         <thead>
-                            <tr>
+                            <tr> 
                                 <th>Šifra</th>
                                 <th>Naziv</th>
                                 <th>Količina</th>

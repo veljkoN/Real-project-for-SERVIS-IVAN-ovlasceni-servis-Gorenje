@@ -23,8 +23,11 @@ import CheckItems from './components/CheckItems';
 import Bulevar from './components/Bulevar';
 import ChangeBulevar from './components/ChangeBulevar';
 import DeleteBulevar from './components/DeleteBulevar';
-import CalculatePrice from './components/CalculatePrice';
 import CalculatePriceCheck from './components/CalculatePriceCheck';
+import CalculatePriceEmail from './components/CalculatePriceEmail';
+import DepoTemplate from './components/DepoTemplate';
+import ResTemplate from './components/ResTemplate';
+import AddWorkerBulevar from './components/AddWorkerBulevar';
   
 const  App = () => {
   return (
@@ -55,8 +58,11 @@ const  App = () => {
           <Route path='/podaciBulevar' exact component={Bulevar}/>
           <Route path='/promenaPodatakaBulevar' exact component={ChangeBulevar}/>
           <Route path='/bulevarBrisanje' exact component={DeleteBulevar}/>
-          <Route path='/kalkulacijaCena' exact component={CalculatePrice}/>
+          <Route path='/kalkulacijaCena' exact component={CalculatePriceEmail}/>
           <Route path='/korekcijaCena' exact component={CalculatePriceCheck}/>
+          <Route path='/depozit' exact component={DepoTemplate} /> 
+          <Route path='/prijemnica' exact component={ResTemplate} />
+          <Route path='/noviRadnik' exact component={AddWorkerBulevar} />
           <Route path='/' exact component={AddItem} />
         </Switch>
       </Router>

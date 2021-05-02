@@ -115,4 +115,58 @@ const  ExcelDateToJSDate = (date:any) => {
     let newDate = `${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`.split(" ")
     return newDate[0]
 }
-export {mesec, godina, datumItem, showDate}
+//set good date
+const showDateDepo = (date:string) => {
+    let day = date.slice(0,2)
+    const mon = date.slice(3,5)
+    const year =  date.slice(6,10)
+    let mesec = ''
+    switch (mon) {
+        case '01':
+            mesec='Januar'
+            break;
+        case '02':
+            mesec='Februar'
+            break;
+        case '03':
+            mesec='Mart'
+            break;
+        case '04':
+            mesec='April'
+            break;
+        case '05':
+            mesec='Maj'
+            break;
+        case '06':
+            mesec='Jun'
+            break;
+        case '07':
+            mesec='Jul'
+            break;
+        case '08':
+            mesec='Avgust'
+            break;
+        case '09':
+            mesec='Septembar'
+            break;
+        case '10':
+            mesec='Oktobar'
+            break;
+        case '11':
+            mesec='Novembar'
+            break;
+        case '12':
+            mesec='Decembar'
+            break;
+        default:
+            break;
+    }
+    if(date.slice(0,1)==='0'){
+        day = day.slice(1,2)
+    }
+   
+    let fullYear = `${day}. ${mesec} ${year}. godine`
+    return fullYear
+
+}
+export {mesec, godina, datumItem, showDate, showDateDepo }

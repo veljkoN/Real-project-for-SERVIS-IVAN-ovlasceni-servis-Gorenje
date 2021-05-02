@@ -213,3 +213,85 @@ nav ul li a:hover{
   font-size: 1.2rem;
   border-radius: 0.25rem !important;
 }
+#depo-box{
+  margin: 1rem;
+  margin-left: 2rem;
+  width: 90%;
+}  
+#depo-header{
+  border: 2px solid black;
+  padding: 0.5rem;
+}
+.name-depo-box{
+  width: 330px;
+  border-top: 2px solid black;
+}
+#tabela-depo thead tr th  {
+  border: 1px solid black;
+  padding: 0.25rem !important;
+  
+}
+#tabela-depo thead tr td  {
+  border: 1px solid black;
+  padding: 0.25rem !important;
+  
+}
+#depozitLink{
+  font-family: 'Lobster';
+  font-weight: bold;
+  background-color: rgb(27, 27, 90);
+  width: 28px;
+  height: 28px;
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+  border: 2px solid blueviolet;
+  box-shadow: 3px solid wheat;
+  color:rgb(240, 234, 234);
+}
+#prijemincaLink{
+  font-family: 'Lobster';
+  font-weight: bolder;
+  background-color: rgb(0, 0, 167);
+  width: 28px;
+  height: 28px;
+  padding: 0.5rem 0.7rem;
+  border-radius: 20%!important;
+  border: 2px solid blueviolet;
+  box-shadow: 3px solid wheat;
+  color:rgb(240, 234, 234);
+}
+#dataToEmail{
+  border-radius: 0.25rem !important
+}
+#emailOk{
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+}
+#emailNo{
+  height: 2.5rem;
+}
+.markItem{
+  cursor: pointer;
+}
+.text-u{
+  text-decoration: underline;
+}
+.comand-desc{
+  font-size: 18px;
+}
+.des-span-btn{
+  position:relative;
+  bottom:2px
+}
+.des-span-btn1{
+  position:relative;
+  bottom:1px
+}
+.sifre-pr{
+  position:absolute;
+  top:370px
+}
+.list-desc{
+  position:absolute;
+  top:460px
+}
